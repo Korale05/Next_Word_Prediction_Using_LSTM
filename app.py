@@ -4,11 +4,21 @@ import pickle
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
+"""
+This is for to run locally 
 ## Load the Lstm model and tokinizar
 model = load_model(r'Next_Word_Prediction\next_word_lstm.keras')
 
 
 with open(r"Next_Word_Prediction\tokenizer.pickle","rb") as file:
+    tokenizer = pickle.load(file)
+"""
+#This is for deployment 
+## Load the Lstm model and tokinizar
+model = load_model('next_word_lstm.keras')
+
+
+with open("tokenizer.pickle","rb") as file:
     tokenizer = pickle.load(file)
 
 
