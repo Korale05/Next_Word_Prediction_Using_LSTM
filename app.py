@@ -9,7 +9,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 #For deplyment
 # Load the LSTM model and tokenizer
-model = load_model('next_word_lstm.keras')
+model = load_model('next_word_lstm.h5')
 
 with open("tokenizer.pickle", "rb") as file:
     tokenizer = pickle.load(file)
