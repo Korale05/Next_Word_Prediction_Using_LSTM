@@ -4,12 +4,8 @@ import pickle
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-#While Running locally
-# # Load the LSTM model and tokenizer
-# model = load_model(r'Next_Word_Prediction\next_word_lstm.keras')
 
-# with open(r"Next_Word_Prediction\tokenizer.pickle", "rb") as file:
-#     tokenizer = pickle.load(file)
+
 
 #For deplyment
 # Load the LSTM model and tokenizer
