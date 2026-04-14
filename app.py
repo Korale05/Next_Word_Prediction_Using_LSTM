@@ -39,7 +39,7 @@ def predict_next_word(model,tokenizer,text):
 
 
 ## Streamlate app
-st.title("Next word Prediction with LSTM and Early Stopping")
+st.title("Next word Prediction with LSTM")
 input_text = st.text_input("Enter the sequence of word",'To be or not to be')
 if st.button("Predict Next Word"):
     next_word = predict_next_word(model,tokenizer,input_text)
